@@ -41,6 +41,11 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Create the Pages site (Source: GitHub Actions) on the first run if
+          # it isn't enabled yet, so the deploy is self-serve without a manual
+          # Settings → Pages toggle.
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
