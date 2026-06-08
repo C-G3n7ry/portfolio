@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://g3n7ry.com/sitemap.xml

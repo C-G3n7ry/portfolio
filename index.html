@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0d" />
+
+    <title>Christopher Gentry — Writer &amp; Builder · g3n7ry</title>
+    <meta
+      name="description"
+      content="Christopher Gentry (g3n7ry) — a Rapid City, South Dakota writer and builder. Chronicling the history of the Black Hills and shipping small, fast software."
+    />
+    <link rel="canonical" href="https://g3n7ry.com/" />
+    <meta name="author" content="Christopher Gentry" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Christopher Gentry — Writer & Builder · g3n7ry" />
+    <meta
+      property="og:description"
+      content="A Rapid City, South Dakota writer and builder. Chronicling the history of the Black Hills and shipping small, fast software."
+    />
+    <meta property="og:url" content="https://g3n7ry.com/" />
+    <meta property="og:site_name" content="g3n7ry" />
+    <meta property="og:image" content="https://g3n7ry.com/assets/og.png" />
+    <meta property="profile:first_name" content="Christopher" />
+    <meta property="profile:last_name" content="Gentry" />
+    <meta property="profile:username" content="g3n7ry" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Christopher Gentry — Writer & Builder · g3n7ry" />
+    <meta
+      name="twitter:description"
+      content="A Rapid City, South Dakota writer and builder. Chronicling the history of the Black Hills."
+    />
+    <meta name="twitter:image" content="https://g3n7ry.com/assets/og.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="Rapid City History" href="https://christopher-gentry.com/rss.xml" />
+
+    <!-- Fonts: Fraunces (editorial serif) + JetBrains Mono (engineering mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:ital,wght@0,400..700;1,400..600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Entity / brand corroboration. Mirrors the Person schema on christopher-gentry.com
+         so search engines treat both sites as one entity (sameAs is the key signal). -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Christopher Gentry",
+          "alternateName": "g3n7ry",
+          "url": "https://g3n7ry.com",
+          "email": "mailto:chris@g3n7ry.com",
+          "jobTitle": "Writer & Builder",
+          "description": "Christopher Gentry is a Rapid City, South Dakota writer and builder who chronicles the history of the Gateway to the Black Hills and ships small, fast software.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rapid City",
+            "addressRegion": "SD",
+            "addressCountry": "US"
+          },
+          "sameAs": [
+            "https://christopher-gentry.com",
+            "https://www.linkedin.com/in/g3n7ry",
+            "https://github.com/C-G3n7ry"
+          ]
+        }
+      }
+    </script>
+  </head>
+
+  <body data-booting>
+    <!-- Atmosphere layers -->
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="ember-glow" aria-hidden="true"></div>
+    <div class="grid-field" aria-hidden="true"></div>
+
+    <!-- Boot sequence overlay -->
+    <div class="boot" id="boot" role="status" aria-live="polite">
+      <pre class="boot__stream" id="boot-stream"></pre>
+      <button class="boot__skip" id="boot-skip" type="button">skip ↵</button>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar reveal" data-reveal>
+      <a class="topbar__mark" href="/" aria-label="g3n7ry home">
+        <span class="mark__glyph">g3n7ry</span>
+        <span class="mark__cursor" aria-hidden="true"></span>
+      </a>
+      <nav class="topbar__nav" aria-label="Primary">
+        <a href="#work">work</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+        <a class="topbar__cta" href="https://christopher-gentry.com">the&nbsp;blog ↗</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ───────────────────────── HERO ───────────────────────── -->
+      <section class="hero" aria-labelledby="hero-name">
+        <p class="hero__kicker reveal" data-reveal data-delay="1">
+          <span class="prompt">g3n7ry@console</span>
+          <span class="dim">:</span><span class="path">~</span>
+          <span class="dim">$</span> whoami
+        </p>
+
+        <h1 class="hero__name reveal" data-reveal data-delay="2" id="hero-name">
+          Christopher<br /><span class="hero__name-accent">Gentry</span>
+        </h1>
+
+        <p class="hero__role reveal" data-reveal data-delay="3">
+          <span class="tag">writer</span>
+          <span class="sep" aria-hidden="true">/</span>
+          <span class="tag">builder</span>
+          <span class="sep" aria-hidden="true">/</span>
+          <span class="tag">Rapid City, SD</span>
+        </p>
+
+        <p class="hero__lede reveal" data-reveal data-delay="4">
+          I chronicle the history of the
+          <a href="https://christopher-gentry.com" class="ink">Black&nbsp;Hills</a>
+          and ship small, fast software. Two crafts, one stubborn habit:
+          do the research, then make the thing legible.
+        </p>
+
+        <div class="hero__cta reveal" data-reveal data-delay="5">
+          <a class="btn btn--solid" href="#work">
+            <span>view the work</span>
+            <span class="btn__chev" aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn--ghost" href="mailto:chris@g3n7ry.com">
+            <span>chris@g3n7ry.com</span>
+          </a>
+        </div>
+
+        <div class="hero__scroll reveal" data-reveal data-delay="6" aria-hidden="true">
+          <span class="hero__scroll-line"></span>
+          <span>scroll</span>
+        </div>
+      </section>
+
+      <!-- ───────────────────────── WORK ───────────────────────── -->
+      <section class="section" id="work" aria-labelledby="work-h">
+        <div class="section__head" data-reveal>
+          <span class="section__index">01</span>
+          <h2 class="section__title" id="work-h">Selected work</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </div>
+
+        <!-- Featured project: live latest post from the history blog -->
+        <article class="feature" data-reveal>
+          <div class="feature__meta">
+            <span class="badge badge--live" id="feed-status">
+              <span class="badge__dot"></span> live
+            </span>
+            <span class="feature__kind">history · long-form</span>
+          </div>
+
+          <h3 class="feature__title">
+            <a href="https://christopher-gentry.com">Rapid City History</a>
+          </h3>
+          <p class="feature__desc">
+            A research-driven archive of the Gateway to the Black Hills — the 1876
+            gold-rush founding, the 1972 flood, the City of Presidents, and the
+            deeper story of He&nbsp;Sapa. 100+ articles, a new one every week.
+          </p>
+
+          <div class="feature__latest" id="latest" aria-live="polite">
+            <span class="feature__latest-label">latest dispatch</span>
+            <a class="feature__latest-link" id="latest-link" href="https://christopher-gentry.com">
+              <span id="latest-title">Loading the newest article…</span>
+              <span class="feature__latest-date" id="latest-date"></span>
+            </a>
+          </div>
+
+          <a class="feature__open" href="https://christopher-gentry.com">
+            christopher-gentry.com <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <!-- Secondary projects grid -->
+        <div class="cards">
+          <article class="card" data-reveal>
+            <header class="card__head">
+              <span class="card__no">02</span>
+              <span class="card__tag">automation</span>
+            </header>
+            <h3 class="card__title">The weekly engine</h3>
+            <p class="card__desc">
+              A scheduled pipeline that researches, drafts, illustrates, and
+              publishes a new history article every Monday — then deploys itself.
+              Static output, zero ongoing toil.
+            </p>
+            <span class="card__stack">
+              <span>GitHub Actions</span><span>Astro</span><span>LLM</span>
+            </span>
+          </article>
+
+          <article class="card" data-reveal>
+            <header class="card__head">
+              <span class="card__no">03</span>
+              <span class="card__tag">craft</span>
+            </header>
+            <h3 class="card__title">Fast by default</h3>
+            <p class="card__desc">
+              Sites that ship near-zero JavaScript, rank on real content, and
+              load instantly on a phone in a canyon. Semantic HTML, structured
+              data, no bloat.
+            </p>
+            <span class="card__stack">
+              <span>HTML</span><span>CSS</span><span>SEO</span>
+            </span>
+          </article>
+
+          <article class="card card--next" data-reveal>
+            <header class="card__head">
+              <span class="card__no">04</span>
+              <span class="card__tag">next</span>
+            </header>
+            <h3 class="card__title">In the queue</h3>
+            <p class="card__desc">
+              An interactive map and timeline built on the history corpus —
+              turning 100+ articles into something you can explore, not just read.
+            </p>
+            <span class="card__stack card__stack--soon">
+              <span>coming soon</span>
+            </span>
+          </article>
+        </div>
+      </section>
+
+      <!-- ───────────────────────── ABOUT ───────────────────────── -->
+      <section class="section section--about" id="about" aria-labelledby="about-h">
+        <div class="section__head" data-reveal>
+          <span class="section__index">05</span>
+          <h2 class="section__title" id="about-h">About</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="about">
+          <div class="about__body" data-reveal>
+            <p class="about__lead">
+              I&apos;m Christopher Gentry — most places online I go by
+              <span class="ink-static">g3n7ry</span>.
+            </p>
+            <p>
+              I live in <strong>Rapid City, South Dakota</strong>, at the edge of
+              the Black Hills, and I spend my time on two things that turn out to
+              be the same thing: researching local history until it&apos;s clear,
+              and building software until it&apos;s simple. Both reward patience and
+              punish hand-waving.
+            </p>
+            <p>
+              The writing lives at
+              <a href="https://christopher-gentry.com" class="ink">christopher-gentry.com</a> —
+              a growing archive of the people, places, and decisions that built the
+              Gateway to the Black Hills. The building shows up here, and on
+              <a href="https://github.com/C-G3n7ry" class="ink">GitHub</a>.
+            </p>
+          </div>
+
+          <aside class="about__card" data-reveal aria-label="At a glance">
+            <dl class="spec">
+              <div class="spec__row">
+                <dt>based</dt>
+                <dd>Rapid City, SD</dd>
+              </div>
+              <div class="spec__row">
+                <dt>focus</dt>
+                <dd>local history · web</dd>
+              </div>
+              <div class="spec__row">
+                <dt>writing</dt>
+                <dd>100+ articles</dd>
+              </div>
+              <div class="spec__row">
+                <dt>cadence</dt>
+                <dd>weekly</dd>
+              </div>
+              <div class="spec__row">
+                <dt>status</dt>
+                <dd><span class="spec__live">open to good ideas</span></dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ───────────────────────── CONTACT ───────────────────────── -->
+      <section class="section section--contact" id="contact" aria-labelledby="contact-h">
+        <div class="section__head" data-reveal>
+          <span class="section__index">06</span>
+          <h2 class="section__title" id="contact-h">Get in touch</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="contact" data-reveal>
+          <a class="contact__primary" href="mailto:chris@g3n7ry.com">
+            <span class="contact__primary-label">say hello</span>
+            <span class="contact__primary-value">
+              chris@g3n7ry.com <span class="contact__caret" aria-hidden="true"></span>
+            </span>
+          </a>
+
+          <ul class="contact__links" aria-label="Profiles">
+            <li>
+              <a href="https://github.com/C-G3n7ry">
+                <span class="contact__k">gh</span>
+                <span class="contact__v">github.com/C-G3n7ry</span>
+                <span class="contact__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/g3n7ry">
+                <span class="contact__k">in</span>
+                <span class="contact__v">linkedin.com/in/g3n7ry</span>
+                <span class="contact__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://christopher-gentry.com">
+                <span class="contact__k">www</span>
+                <span class="contact__v">christopher-gentry.com</span>
+                <span class="contact__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span class="footer__mark">g3n7ry</span>
+        <span class="footer__copy">
+          © <span id="year">2026</span> Christopher Gentry · Rapid City, SD
+        </span>
+        <span class="footer__sig" aria-hidden="true">
+          <span class="footer__dot"></span> built by hand
+        </span>
+      </div>
+    </footer>
+
+    <script src="/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffc874"/>
+      <stop offset="0.5" stop-color="#f0a93b"/>
+      <stop offset="1" stop-color="#b9701a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="22%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#f0a93b" stop-opacity="0.18"/>
+      <stop offset="0.6" stop-color="#f0a93b" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#1f1d24" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0a0a0c"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="6" y="6" width="1188" height="618" rx="20" fill="none" stroke="#29272f" stroke-width="2"/>
+
+  <!-- prompt -->
+  <text x="80" y="150" font-family="'JetBrains Mono', monospace" font-size="26" fill="#7ea2b6">
+    g3n7ry@console<tspan fill="#6f6a62">:</tspan><tspan fill="#f0a93b">~</tspan><tspan fill="#6f6a62"> $</tspan> whoami
+  </text>
+
+  <!-- name -->
+  <text x="76" y="320" font-family="'Fraunces', Georgia, serif" font-weight="600" font-size="132" letter-spacing="-4" fill="#ece6da">Christopher</text>
+  <text x="76" y="448" font-family="'Fraunces', Georgia, serif" font-weight="400" font-style="italic" font-size="132" letter-spacing="-4" fill="url(#amber)">Gentry</text>
+
+  <!-- role tags -->
+  <g font-family="'JetBrains Mono', monospace" font-size="26" fill="#ece6da">
+    <rect x="80" y="500" width="118" height="48" rx="24" fill="#141318" stroke="#29272f"/>
+    <text x="139" y="531" text-anchor="middle">writer</text>
+    <rect x="214" y="500" width="128" height="48" rx="24" fill="#141318" stroke="#29272f"/>
+    <text x="278" y="531" text-anchor="middle">builder</text>
+    <rect x="358" y="500" width="232" height="48" rx="24" fill="#141318" stroke="#29272f"/>
+    <text x="474" y="531" text-anchor="middle">Rapid City, SD</text>
+  </g>
+
+  <!-- domain -->
+  <text x="1120" y="560" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="28" fill="#f0a93b">g3n7ry.com</text>
+
+  <!-- cursor block -->
+  <rect x="980" y="270" width="26" height="74" rx="3" fill="#f0a93b"/>
+</svg>

@@ -1,0 +1,59 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; don't cancel an in-progress production deploy.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # The site has no build step. We only rasterize the Open Graph image
+      # from its SVG source so the repo stays source-only (no committed PNG).
+      # sharp is installed outside the workspace so node_modules never ends up
+      # in the published artifact.
+      - name: Generate Open Graph image
+        run: |
+          mkdir -p /tmp/og && cd /tmp/og
+          npm init -y >/dev/null 2>&1
+          npm install sharp@^0.34.0 --no-save --no-audit --no-fund >/dev/null 2>&1
+          cd "$GITHUB_WORKSPACE"
+          node -e "require('/tmp/og/node_modules/sharp')('assets/og.svg',{density:144}).resize(1200,630).png({compressionLevel:9}).toFile('assets/og.png').then(i=>console.log('og.png',i.width+'x'+i.height,i.size+'b'))"
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
